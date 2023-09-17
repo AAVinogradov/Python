@@ -14,3 +14,4 @@ else:
         for y in range(numberY):
             if numberX == x + y and numberY == x * y:
                 print(f"Первое число = {x}, второе число = {y}")
+
