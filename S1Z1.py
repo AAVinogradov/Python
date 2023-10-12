@@ -6,7 +6,15 @@
 # Input: n = 700 m = 750 
 # Output: 2
 
-n=int(input("введите n")) #сколько за 1 день проезжает машина
-m=int(input("введите m")) #сколько всего км
+n=int(input("введите n: ")) #сколько за 1 день проезжает машина
+m=int(input("введите m: ")) #сколько всего км
 d=((m//-n))
 print(-d)
+
+# print(math.ceil(m / n))
+# print(abs(m//(-n)))
+# print(round(m / n + 1))
+# print((m+n-1)//n)  !!! Крутое решение
+
+
+
