@@ -12,3 +12,80 @@ for i in range(n - 1):
     elif min_massa > x:
         min_massa = x
 print(min_massa, max_massa)
+
+
+# import random
+# print("Enter N")
+# array = [random.randint(1,20) for i in range(int(input()))]
+
+# light = array[0]
+# heavy = array[0]
+
+# print(array)
+# for watermelon in array[1:]:
+#     if watermelon > heavy:
+#         heavy = watermelon
+#     elif watermelon < light:
+#         light = watermelon
+
+# print(f'{light} {heavy}')
+
+# import random
+# n = int(input("Введите количество арбузов: "))
+
+# massa = [random.randint(1, 25) for i in range (n)]
+# print(massa)    
+# min_weight = min(massa)
+# max_weight = max(massa)
+# print(f"Для тещи: ", min_weight, "кг")
+# print(f"Для себя: ", max_weight, "кг")
+
+# import random
+# import os
+
+# os.system("cls")
+
+# N = int(input("Введите число арбузов "))
+# max = 0
+# min = 999
+
+# for i in range(N):
+#     mass = random.randint(1,10)
+#     print(mass, end=' ')
+#     if mass <= min:
+#         min = mass
+#     if mass >= max:
+#         max = mass 
+# print()
+# print("Самый тяжелый арбуз весит: ", max)
+# print("Самый легкий арбуз весит: ", min)
+
+# N = int(input("количество арбузов "))
+# i, array = 1, []
+# while i <= N:
+#     array.append(int(input("Введите вес арбузов " )))
+#     i +=1
+
+
+# array.sort()
+# print("Теще мы дали арбуз ", {array[0]}, "кг, а себе взяли абрбуз", {array[-1]}, "кг")
+
+# import random
+# # print(random.random())
+# # print(random.randint(1, 2))
+# # print('-' * 45)
+# n = 5
+# mass_list = []
+# for _ in range(n):
+#     mass_list.append(random.randint(1, 10))
+# print(mass_list)
+# # print(' *', min(mass_list), max(mass_list))
+# # print(sum(mass_list))
+# min_ = mass_list[0]
+# max_ = mass_list[0]
+# for i in mass_list:
+#     if i > max_:
+#         max_ = i
+#     if i < min_:
+#         min_ = i
+# print(min_, max_)

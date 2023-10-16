@@ -16,4 +16,37 @@ else:
     else:
         print(f"Билет № {ticket} счастливый?")
         print("Да")
+        
 
+
+# n=str(n)
+# res = 0
+# res1 = 0
+# for i in range(len(n)//2):
+#     res += int(n[i])
+#     res1 += int(n[len(n)//2 + i])
+# if res == res1:
+#     print('yes')
+# else:
+#     print('no')
+
+# n = 12321
+# n=str(n)
+# res = 0
+# res1 = 0
+# for i in range(len(n)//2):
+#     res += int(n[i])
+#     res1 += int(n[len(n)//2 + i])
+# if res == res1:
+#     print('yes')
+# else:
+#     print('no')
+
+# n = 385916
+# n = str(n)
+# sum1=int(n[0])+int(n[1])+int(n[2])
+# sum2=int(n[3])+int(n[4])+int(n[5])
+# if sum1==sum2:
+#   print('yes')
+# else:
+#   print('no')
