@@ -8,3 +8,10 @@ while n > 0:
     f = f * n       
     n = n - 1       
 print(f)
+
+# n = int(input("Input number: "))
+# result = 1
+# while n > 1:
+#     result *= n # result = result * n
+#     n -= 1
+# print(result)

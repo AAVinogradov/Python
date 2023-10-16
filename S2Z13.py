@@ -2,15 +2,74 @@
 # Input:    6 -> -20 30 -40 50 10 -10 
 # Output: 2
 
-n = int(input("Введите кол-во дней: "))
-count = 0
-max_count = 0
-for i in range(n):
-    temp = int(input("Введите температуру: "))
-    if temp >= 0:
-        count += 1
-        if max_count < count:
-            max_count = count
-    else:
-        count = 0
-print(max_count)
+# n = int(input("Введите кол-во дней: "))
+# count = 0
+# max_count = 0
+# for i in range(n):
+#     temp = int(input("Введите температуру: "))
+#     if temp >= 0:
+#         count += 1
+#         if max_count < count:
+#             max_count = count
+#     else:
+#         count = 0
+# print(max_count)
+
+# import random
+# array = [random.randint(-50,50) for i in range(6)]
+# temp_count = 0
+# count = 0
+# print(array)
+# for temp in array:
+#     if temp>0:
+#         temp_count+=1
+#     else:
+#         count = max(count,temp_count)
+#         temp_count = 0
+# count = max(count,temp_count)
+# print(count)
+
+# length = 0  
+# max_length = 0  
+
+# for i in range(n):
+#     el = int(numbers[i])
+
+#     if el > 0:
+#         length += 1
+#     else:
+#         length = 0
+
+#     if length > max_length:
+#         max_length = length
+
+
+# print(max_length)
+
+
+# import random
+# import os
+
+# os.system("cls")
+
+# N = int(input("Введите число N рассматриваемых дней (1 ≤ N ≤ 100): "))
+# summ = 0
+# count = 0
+# # listtemp = [-36, -45, -25, 11, 49, 49]
+# for i in range(N):
+#     t = random.randint (-50, 50)
+#     if t > 0:
+#         count+=1
+#     else: 
+#         if count > summ:
+#             summ = count
+#         count=0
+#     print(t, end=' ')
+# print()
+# if count > summ:
+#     summ = count
+# print("Наибольшее кол-во дней оттепели равно ", summ)
+
+# l = [1, 2, 3, 4, 5]
+# for i in range(len(l)):
+#     print(i)
