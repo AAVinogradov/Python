@@ -1,8 +1,7 @@
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 
 count = int(input("Введите число "))
-r = range(0, count, 1)
-for x in r:
+for x in range(0, count, 1):
     p = 2 ** x
     if p <= count:
         print(p)

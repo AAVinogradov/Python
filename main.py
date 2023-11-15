@@ -101,22 +101,73 @@
 #         bool = False      
 # print(bool)   
 
-firstNum = True
-secondNum = 0
-const = True
-count = 0
-while firstNum >= 0 and firstNum < 1000000:
-    firstNum = int(input("Сколько потратил Вася в этом месяце: "))
-    if firstNum < 0:
-        break
-    elif firstNum > secondNum:
-        secondNum = firstNum
-        count += 1
-        const = True
-    else:
-        const = False
-if count > 2 and const == True:
-    const = True
-else:
-    const = False
-print(const)
+# firstNum = True
+# secondNum = 0
+# const = True
+# count = 0
+# while firstNum >= 0 and firstNum < 1000000:
+#     firstNum = int(input("Сколько потратил Вася в этом месяце: "))
+#     if firstNum < 0:
+#         break
+#     elif firstNum > secondNum:
+#         secondNum = firstNum
+#         count += 1
+#         const = True
+#     else:
+#         const = False
+# if count > 2 and const == True:
+#     const = True
+# else:
+#     const = False
+# print(const)
+
+
+# adress = input("Введите адреса через запятую без пробелов: ").split(',')
+# print(adress)
+# number = int(input("Введите количество замен: "))
+# i = 0
+# j = [0]
+# f = [0]
+# new_adress = list()
+# while i < number:
+#     input_adress = input("Введите старый и новый адрес через пробел: ").split(' ')
+#     new_adress = new_adress + input_adress
+#     i += 1
+#     print(new_adress)
+# for f in range (len(adress)):
+#     for j in range (len(new_adress)):
+#         if adress[f] == new_adress[j]:
+#             adress[f] = new_adress[j + 1]
+#             break            
+# # print(*[item + ';' for item in adress])
+# print(*adress, sep = ';')
+# print()
+# print("правильный результат: romashka@m.edu;zaika888@m.edu;121@m.edu;ooivanova@m.com;python_master@m.ru;taisia@m.edu")
+
+# adress = input("Введите фамилии: ").split(',')
+# number = int(input("Введите количество замен: "))
+# for i in range (0, number, 1):
+#     temp = input("Введите новый и старый адрес через пробел: ").split(' ')
+#     old_add = temp[0]
+#     new_add = temp[1]
+#     for i in range(0, len(adress)):
+#         if adress[i] == old_add:
+#             adress[i] = new_add  
+# print(*adress, sep = ';')
+
+adress = input().split(',')
+number = int(input())
+i = 0
+j = [0]
+f = [0]
+new_adress = list()
+while i < number:
+    input_adress = input().split(' ')
+    new_adress = new_adress + input_adress
+    i += 1
+for f in range (len(adress)):
+    for j in range (len(new_adress)):
+        if adress[f] == new_adress[j]:
+            adress[f] = new_adress[j + 1]
+            break            
+print(*adress, sep = ';')

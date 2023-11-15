@@ -3,7 +3,10 @@
 
 quantityСoins = int(input("Введите количество монет: "))
 import random
-coins = [random.randint(0, 1) for i in range(quantityСoins)]
+# coins = [random.randint(0, 1) for i in range(quantityСoins)]
+coins = []
+for i in range(quantityСoins):
+    coins.append(random.randint(0, 1))
 print(coins)
 i = 0
 sum1 = 0
