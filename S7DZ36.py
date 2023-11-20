@@ -25,7 +25,7 @@
 #     5  10 15 20 25 30
 #     6  12 18 24 30 36  
 
-Вариант 1: 
+# Вариант 1: 
 def print_operation_table(operation, num_rows, num_columns):
     if num_rows < 2 :
         return print("ОШИБКА! Размерности таблицы должны быть больше 2!")
