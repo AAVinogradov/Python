@@ -44,3 +44,15 @@ print(" ".join(result_list))
 #         string_dict[i] = 0
 #         zero += f"{i} "
 # print(zero)
+
+
+
+# lst = "a a a b c a a d c d d".split()
+# print(lst)
+# dct = {}
+# for item in lst:
+#     if item in dct:
+#         print(f"{item}_{dct[item]}", end=' ')
+#     else:
+#         print(item, end=' ')
+#     dct[item] = dct.get(item, 0) + 1

@@ -155,19 +155,61 @@
 #             adress[i] = new_add  
 # print(*adress, sep = ';')
 
-adress = input().split(',')
-number = int(input())
-i = 0
-j = [0]
-f = [0]
-new_adress = list()
-while i < number:
-    input_adress = input().split(' ')
-    new_adress = new_adress + input_adress
-    i += 1
-for f in range (len(adress)):
-    for j in range (len(new_adress)):
-        if adress[f] == new_adress[j]:
-            adress[f] = new_adress[j + 1]
-            break            
-print(*adress, sep = ';')
+# adress = input().split(',')
+# number = int(input())
+# i = 0
+# j = [0]
+# f = [0]
+# new_adress = list()
+# while i < number:
+#     input_adress = input().split(' ')
+#     new_adress = new_adress + input_adress
+#     i += 1
+# for f in range (len(adress)):
+#     for j in range (len(new_adress)):
+#         if adress[f] == new_adress[j]:
+#             adress[f] = new_adress[j + 1]
+#             break            
+# print(*adress, sep = ';')
+
+# N1 = int(input())
+# N2 = int(input())
+# sq = None
+# for i in range (N1, N2 + 1):
+#     if i % 2 == 0:
+#         sq = i * i
+#         print(sq)
+        
+# N1 = int(input())
+# N2 = int(input())
+# sq =  [i * i for i in range(N1, N2 + 1) if i % 2 == 0]
+# print(*sq, sep = "\n")
+
+
+# cities = input().split(", ")
+# letter = input()
+# list1 = []
+# temp_str = " "
+# for i in range(len(cities)):
+#     if cities[i] != 0:
+#         temp_str = cities[i]
+#         if temp_str[0] == letter:
+#             list1.append(cities[i])
+# print(*list1, sep = "\n")
+
+def scholarship(grade):
+    spisok_1_2 = []
+    spisok_3 = []
+    for i in grade:
+        if i == 1 or i == 2:
+            spisok_1_2.append(i)
+        elif i == 3:
+            spisok_3.append(i)
+    if len(spisok_1_2) == 0 and len(spisok_3) == 1:
+        return True
+    else:
+        return False
+
+evaluations = [4, 5, 4, 4, 5, 3, 4, 5, 5, 5]
+x = scholarship(evaluations)
+print(x)
